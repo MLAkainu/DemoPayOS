@@ -1,0 +1,17 @@
+{
+  "name": "demopayos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MinhLoc",
+  "license": "ISC",
+  "dependencies": {
+    "@payos/node": "^1.0.6",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
+  }
+}

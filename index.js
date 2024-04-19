@@ -18,7 +18,7 @@ app.post('/create-payment-link', async (req, res) => {
     const order = {
         amount: 10000,
         description: ' Thanh toan don hang',
-        orderCode: 11,
+        orderCode: 13,
         returnUrl: `${DOMAIN}/success.html`,
         cancelUrl: `${DOMAIN}/cancel.html`,
     };
@@ -29,6 +29,7 @@ app.post('/create-payment-link', async (req, res) => {
 });
 
 // Webhook-url 
+// https://fc33-113-182-41-195.ngrok-free.app/receive-hook
 app.post("/receive-hook", async (req, res) => {
     console.log(req.body);
     res.json();
